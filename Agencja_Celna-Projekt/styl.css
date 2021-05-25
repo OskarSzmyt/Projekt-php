@@ -1,0 +1,248 @@
+html {
+  scroll-behavior:smooth;
+}
+body{
+    background-color: white;
+    margin: 0;
+    font-family: sans-serif;
+    font: Veranda;
+    color:black;
+    width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+#naglowek{
+   background: rgb(249,249,251);
+background: linear-gradient(to bottom, rgba(249,249,251,1) 0%, rgba(224,224,227,1) 50%, rgba(195,198,200,1) 100%);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+}
+#logo{
+width:200px;
+    height: auto;
+    object-position: center;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+  justify-content: space-between;
+}
+.m
+{
+    width: 100px;
+    height: 50px;
+    font-size: 130%;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 3px;
+    
+
+}
+.m:hover{ background: lightgray;}
+.m m{text-decoration: none;}
+.m:hover m{ background: lightgray; }
+
+
+#autostrada
+{
+    width: 100%;
+}
+.kafelki{
+    background: rgb(249,249,251);
+    background: linear-gradient(to bottom, rgba(249,249,251,1) 0%, rgba(224,224,227,1) 50%, rgba(195,198,200,1) 100%);
+    width: 190px%;
+    height: 250px;
+    margin: 1px;
+   display: grid;
+    padding: 5px;
+}
+#grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'A_C T_S LOG D_F'
+                         
+}
+#A_C{grid-area: A_C;}
+#T_S{grid-area: T_S;}
+LOG{grid-area: LOG;}
+D_F{grid-area: D_F;}
+
+#O-nas{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'opis opis opis zdj_2'
+    }
+#opis{grid-area: opis;}
+#zdj_2{grid-area: zdj_2;}
+.on{
+    height: 270px;
+    background: white;
+    margin 5px;
+    padding: 10px;
+    
+}
+#o_nas
+{height: 250px;
+}
+#AC2{
+    background-image:url(bgimg1.jpg);
+     display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'zdj_3 opisAC opisAC opisAC';
+    
+}
+#opisAC{grid-area: opisAC;}
+#zdj_3{grid-area: zdj_3;}
+
+#celna{
+    height:250px;
+}
+.AC{
+    height: 270px;
+    margin 5px;
+    padding: 10px;
+}
+
+
+#panele{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:'MN KRAJ';
+    grid-gap: 5px;
+}
+#MN {grid-area: MN;}
+#KRAJ {grid-area: KRAJ;}
+#panele2{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:'SPED DROB';
+    grid-gap: 5px;
+}
+#SPED {grid-area: SPED;}
+#DROB {grid-area: DROB;}
+.tis{
+    background: rgb(249,249,251);
+    background: linear-gradient(to bottom, rgba(249,249,251,1) 0%, rgba(224,224,227,1) 50%, rgba(195,198,200,1) 100%);
+    width: 190px%;
+    height: 175px;
+    margin: 1px;
+   display: grid;
+    padding: 5px;
+    }
+#LOG{
+    background-image:url(bgimg2.jpg);
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'opisLOG opisLOG opisLOG zdj_4';
+    
+    
+    }
+#opisLOG {grid-area: opisLOG;}
+#zdj_4 {grid-area: zdj_4;}
+#logi{
+    height: 250px;
+}
+#mapa{
+    background: rgb(249,249,251);
+    background: linear-gradient(rgba(249,249,251,1) 0%, rgba(224,224,227,1) 50%, rgba(195,198,200,1) 100%);
+}
+#kontakt{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'adres serwisy telefon ekontakt'
+}
+#adres{grid-area: adres;}
+#serwisy{grid-area: serwisy;}
+#telefon{grid-area: telefon;}
+#ekontakt{grid-area: ekontakt;}
+
+.contact{
+    background: linear-gradient(to bottom, rgba(249,249,251,1) 0%, rgba(224,224,227,1) 50%, rgba(195,198,200,1) 100%);
+    padding-bottom: 10px;
+}
+footer{
+    text-align: center;
+     background: darkgray;
+    
+    }
+
+
+@keyframes mymove {
+    0%   {top: 0px;}
+    20%  {top: 2px;}
+    40%  {top: 5px;}
+    80%  {top: 2px}
+    100% {top: 0px;}
+}
+
+#logo:active{
+    
+    position: relative;
+    -webkit-animation: moveanimation 2s infinite; 
+    animation: moveanimation 2s infinite;
+}
+
+
+
+@keyframes moveanimation {
+  0%   {width: 250px; height: 100px;}
+  25%  {width: 200px; height: 100px;}
+  70% {width: 250px; height: 100px;}
+  100% {width: 200px; height: 100px;}
+}
+#pytanie
+{
+  background-image:url(bgimg3.jpg);
+}
+
+#form{
+    width: 60%;
+    margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+    .c{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    }
+.red{
+    color: red;
+}
+#pojazdy{
+    background-image:url(bgimg5.png);
+    width: 100%;
+    height: 300px;
+    
+    
+}
+#naszepojazdy td{
+    margin: 0 auto;
+     border: 3px solid gray;
+    justify-content: center;
+    
+    
+}
+#naszepojazdy{
+     border: 3px solid gray;
+    margin:auto;
+    
+}
